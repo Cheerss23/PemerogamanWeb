@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rahasia
+    ports:
+      - "3306:3306"
+  web:
+    image: nginx
+    ports:
+      - "8080:80"

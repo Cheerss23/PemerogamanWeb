@@ -1,0 +1,38 @@
+# Folder vendor (hasil composer install)
+vendor/
+
+# File environment (berisi database, key, dsb)
+.env
+.env.*   # misalnya .env.testing
+
+# Cache dan logs
+/storage/*.key
+/storage/*.log
+/storage/framework/*
+/storage/logs/*
+/storage/oauth-private.key
+/storage/oauth-public.key
+
+# Node modules (jika menggunakan Laravel Mix/Vite)
+node_modules/
+
+# Kompiler front-end
+/public/hot
+/public/storage
+/public/mix-manifest.json
+/public/build
+
+# IDE / OS files
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+.DS_Store
+Thumbs.db
+
+# Laravel specific
+.phpunit.result.cache
+.phpstorm.meta.php
+composer.lock
+yarn.lock
+npm-debug.log
